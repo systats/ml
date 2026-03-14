@@ -357,7 +357,7 @@ fn test_rf_histogram_threshold_propagation() {
 
 #[test]
 fn test_rf_reg_prepared_default_max_features() {
-    // Council C3: regression test to prevent re-introduction of p/3 default.
+    // Regression test: prevent re-introduction of p/3 default.
     // With 5 features, p/3=2 produces significantly worse R² than p=5.
     let n = 200;
     let p = 5;

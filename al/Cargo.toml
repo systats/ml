@@ -1,7 +1,7 @@
 # Root workspace for ml Rust kernels.
 # Intentionally standalone — not a member of any parent workspace.
 # If a Cargo.toml is ever added above this directory, add:
-#   [workspace] exclude = ["agents/modeler/public/al"]
+#   [workspace] exclude = ["al"]
 # to that parent workspace to avoid nested-workspace errors.
 
 [workspace]

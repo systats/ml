@@ -115,7 +115,7 @@ cage:
 	ssh server "sg docker -c 'docker run --rm --memory=1g --cpus=1 ml-ml-container'"
 	@echo "✓ cage passed — macbook-safe"
 
-# ── Beast: full suite unconstrained (Tier 1) ────────────────────────────────
+# ── Server: full suite unconstrained (Tier 1) ────────────────────────────────
 RSYNC_EXCLUDE = --exclude='__pycache__' --exclude='.pytest_cache' --exclude='*.pyc'
 SERVER_ACTIVATE = source ~/ml_test_venv/bin/activate && cd ~/ml_test
 

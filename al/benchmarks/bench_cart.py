@@ -159,7 +159,7 @@ def _time_reg(X_tr, yr_tr, X_te, yr_te, engine="sklearn", hist_thresh=1024):
 def main():
     print()
     print("=" * 130)
-    print("  algoX CART v3 — sort vs histogram vs sklearn")
+    print("  al CART v3 — sort vs histogram vs sklearn")
     print(f"  Timing: median of {TIMED_RUNS} runs (after {WARMUP_RUNS} warmup)")
     print("=" * 130)
 

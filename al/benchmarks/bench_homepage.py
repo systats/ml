@@ -8,15 +8,15 @@ Two modes:
   --allcores   Both engines use all cores (default, user experience)
   --singlecore RAYON_NUM_THREADS=1 + n_jobs=1 (algorithmic comparison)
 
-Run on beast:
-    cd ~/ml_test && python3 benchmarks/bench_homepage.py
-    cd ~/ml_test && python3 benchmarks/bench_homepage.py --singlecore
+Run on server:
+    python3 benchmarks/bench_homepage.py
+    python3 benchmarks/bench_homepage.py --singlecore
 
 Output:
     benchmarks/results_homepage.json   — for homepage JS
     benchmarks/results_homepage.md     — for README
 
-Auditor fixes applied (2026-03-07, 3-auditor council):
+Review fixes applied (2026-03-07):
   P0.1: n_jobs=-1 for sklearn when --allcores (was 1 vs rayon-all-cores)
   P0.2: gradient_boosting flagged as different algorithm (histogram vs exact)
   P0.3: min/max speedup reported alongside geo mean
