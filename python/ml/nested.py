@@ -172,8 +172,8 @@ def nested_cv(
             try:
                 with warnings.catch_warnings():
                     warnings.filterwarnings("ignore")
-                    from .split import split as _split
                     from .cv import cv as _cv
+                    from .split import split as _split
                     inner_split = _split(outer_train, target, seed=inner_seed)
                     inner_cv = _cv(inner_split, folds=inner_folds, seed=inner_seed)
                     inner_model = fit(inner_cv, target,
