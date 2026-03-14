@@ -1,0 +1,24 @@
+[package]
+name         = "ml-py"
+publish      = true
+version.workspace      = true
+edition                = "2021"   # pyo3 0.22 proc-macros incompatible with edition 2024 unsafe rules
+rust-version.workspace = true
+authors      = ["Simon Roth"]
+description  = "Rust kernels for the ml machine learning toolkit (PyO3 bindings)"
+license      = "MIT"
+repository   = "https://github.com/epagogy/ml"
+homepage     = "https://github.com/epagogy/ml"
+categories   = ["science", "mathematics"]
+keywords     = ["machine-learning", "python", "pyo3"]
+
+[lib]
+name       = "ml_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+ml       = { path = "../core" }
+pyo3     = { version = "0.22", features = ["extension-module"] }
+numpy    = "0.22"
+ndarray  = "0.16"
+nalgebra = { workspace = true }

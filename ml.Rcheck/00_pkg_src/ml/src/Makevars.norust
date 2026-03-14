@@ -1,4 +1,0 @@
-# Makevars without Rust -- compiles stub C file only.
-# Copied by configure when cargo is not available.
-PKG_CFLAGS =
-PKG_LIBS =

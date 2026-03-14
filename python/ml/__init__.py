@@ -50,6 +50,7 @@ from .pipeline import pipe, Pipeline
 from .interact import interact, InteractResult
 from .enough import enough, EnoughResult
 from .optimize import optimize
+from .cv import cv, cv_temporal, cv_group  # noqa: F401
 from .nested import nested_cv, NestedCVResult
 from .blend import blend
 from .bin import discretize, Binner

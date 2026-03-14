@@ -1,0 +1,9 @@
+# Local builds: use native CPU features (AVX-512, FMA, AVX2).
+# CI wheels override this via RUSTFLAGS in publish-rust.yml.
+[target.'cfg(not(target_os = "macos"))']
+rustflags = ["-C", "target-cpu=native"]
+
+# macOS: Apple Silicon already uses native by default via LLVM,
+# but be explicit for Intel Macs.
+[target.'cfg(target_os = "macos")']
+rustflags = ["-C", "target-cpu=native"]

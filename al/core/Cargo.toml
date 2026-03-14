@@ -1,0 +1,37 @@
+[package]
+name    = "ml"
+publish = false
+version.workspace      = true
+edition.workspace      = true
+rust-version.workspace = true
+license.workspace      = true
+
+[dependencies]
+nalgebra = { workspace = true }
+matrixmultiply = { workspace = true }
+rayon = { workspace = true }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["float_roundtrip"] }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "bench_cart"
+harness = false
+
+[[bench]]
+name = "bench_forest"
+harness = false
+
+[[bench]]
+name = "bench_gbt"
+harness = false
+
+[[bench]]
+name = "bench_svm"
+harness = false
+
+[[bench]]
+name = "bench_logistic"
+harness = false

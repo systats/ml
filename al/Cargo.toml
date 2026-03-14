@@ -1,0 +1,24 @@
+# Root workspace for ml Rust kernels.
+# Intentionally standalone — not a member of any parent workspace.
+# If a Cargo.toml is ever added above this directory, add:
+#   [workspace] exclude = ["agents/modeler/public/al"]
+# to that parent workspace to avoid nested-workspace errors.
+
+[workspace]
+members  = ["core", "py", "r"]
+resolver = "2"
+
+[workspace.package]
+version      = "1.0.0"
+edition      = "2024"
+rust-version = "1.87"
+license      = "MIT"
+
+[workspace.dependencies]
+nalgebra = { version = "0.34", features = ["serde-serialize"] }
+matrixmultiply = "0.3"
+rayon = "1.10"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
