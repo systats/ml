@@ -11,7 +11,7 @@ url: "https://epagogy.ai"
 license: MIT
 version: 1.0.0
 date-released: "2026-02-26"
-doi: "10.5281/zenodo.18905073"
+doi: "10.5281/zenodo.19023838"
 preferred-citation:
   type: article
   title: "A Grammar of Machine Learning Workflows"
