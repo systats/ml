@@ -2,7 +2,7 @@
 
 Rust algorithm kernels for the `ml` R package, via [extendr](https://extendr.github.io/).
 
-Part of the [ml ecosystem](https://epagogy.ai). Paper: [Roth (2026)](https://doi.org/10.5281/zenodo.18905073).
+Part of the [ml ecosystem](https://epagogy.ai). Paper: [Roth (2026)](https://doi.org/10.5281/zenodo.19023838).
 
 ## Algorithms
 
