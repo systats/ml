@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="https://doi.org/10.5281/zenodo.18905073">Paper</a> · <a href="../python/">Python</a> · <a href="../r/">R</a> · <a href="https://epagogy.ai">epagogy.ai</a>
+  <a href="https://doi.org/10.5281/zenodo.19023838">Paper</a> · <a href="../python/">Python</a> · <a href="../r/">R</a> · <a href="https://epagogy.ai">epagogy.ai</a>
 </p>
 
 ```
