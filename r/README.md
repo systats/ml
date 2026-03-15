@@ -106,7 +106,7 @@ fix themselves.
 
 ```
 Roth, S. (2026). A Grammar of Machine Learning Workflows.
-doi:10.5281/zenodo.18905073
+doi:10.5281/zenodo.19023838
 ```
 
 ## License
