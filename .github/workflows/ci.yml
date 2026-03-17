@@ -35,7 +35,7 @@ jobs:
           RUSTFLAGS: ""
 
       - name: Install mlw with dev dependencies
-        working-directory: ml/python
+        working-directory: python
         run: |
           python -m pip install --upgrade pip
           pip install -e ".[dev,all]"
@@ -44,11 +44,11 @@ jobs:
         run: python -c "from ml._rust import HAS_RUST; assert HAS_RUST, 'Rust backend not available'"
 
       - name: Lint
-        working-directory: ml/python
+        working-directory: python
         run: ruff check ml/
 
       - name: Test
-        working-directory: ml/python
+        working-directory: python
         run: pytest tests/ -x --tb=short
 
   build:
@@ -75,11 +75,11 @@ jobs:
       - name: Build mlw package
         run: |
           pip install build
-          cd ml/python && python -m build
+          cd python && python -m build
 
       - name: Verify both packages
         run: |
           pip install dist/ml_py-*.whl
-          pip install ml/python/dist/mlw-*.whl
+          pip install python/dist/mlw-*.whl
           python -c "import ml; print(f'mlw {ml.__version__}')"
           python -c "from ml._rust import HAS_RUST; assert HAS_RUST, 'Rust not available'"
