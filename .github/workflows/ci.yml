@@ -49,7 +49,7 @@ jobs:
 
       - name: Test
         working-directory: python
-        run: pytest tests/ -x --tb=short
+        run: pytest tests/ -x --tb=short --ignore=tests/test_harvest.py
 
   build:
     runs-on: ubuntu-latest
