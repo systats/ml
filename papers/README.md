@@ -4,15 +4,7 @@ Two companion papers on data leakage in machine learning.
 
 ## Reproduce
 
-### Option 1: Docker (no local dependencies)
-
-```bash
-cd papers
-docker build -t ml-papers-verify .
-docker run ml-papers-verify
-```
-
-### Option 2: Local (Python 3.10+ and [Quarto](https://quarto.org/))
+### Local (Python 3.10+ and [Quarto](https://quarto.org/))
 
 ```bash
 # 1. Landscape paper (run first — grammar paper depends on its claims.json)
